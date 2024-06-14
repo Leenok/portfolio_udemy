@@ -18,6 +18,12 @@
         display: grid;
         grid-template: 1fr / 1fr 1fr;
         column-gap: 130px;
+        @media (max-width:769px){
+            padding: 0;
+            grid-template-columns: repeat(auto-fit,80%);
+            justify-content: center;
+            row-gap: 30px;
+        }
     }
     &__column{
         &-title{

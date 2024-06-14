@@ -1,18 +1,24 @@
 .promo{
     min-height: 100vh;
     position: relative;
-    background: url('../img/promo2.jpg') no-repeat left/cover ;
-    padding-top: 50px;
-    .container{
+    background-color: #6e4f4f;
+    // background: url('../img/promo2.jpg')  no-repeat center/cover;
+    // no-repeat left/cover 
+    // padding-top: 50px;
+    // .container{
 
-    }
+    // }
     &__title{
+        width: 60%;
         color: $main-color-2;
         padding-left: -15px;
         text-shadow: 3px 3px 4px rgb(63, 41, 45);
     }
     &__subtitle{
         position: relative;
+        width: 30%;
+        padding-left: 30px;
+        // padding: 5% 0 0 5%;
         z-index: 2;
         @include before_circle;
     }

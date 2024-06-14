@@ -16,6 +16,10 @@
     }
     &_fz36{
         font-size: 36px;
+        @media (max-width:420px){
+            font-size: 30px;
+            line-height: 44px;
+        }
     }
     &_fz42{
         font-size: 40px;

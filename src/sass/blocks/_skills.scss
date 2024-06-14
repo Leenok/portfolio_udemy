@@ -15,7 +15,9 @@
     }
     &__items{
         display: grid;
-        grid-template: repeat(2, 1fr)/ repeat(4, 270px);
+        grid-template-columns: repeat(auto-fit, 270px);
+        grid-template-rows: 1fr;
+        justify-content: center;
         gap: 13px;
         padding-top: 60px;
     }
@@ -35,7 +37,7 @@
     &__progress{
         padding-top: 120px;
         display: grid;
-        grid-template: repeat(2, 1fr)/ repeat(3, 350px);
+        grid-template-columns: repeat(3, 350px);
         gap: 47px;
         .part{
             display: flex;
@@ -60,10 +62,13 @@
             border-radius: 5px;
             &-color{
                 height: 14px;
-                // width: 90%;
                 border-radius: 5px;
                 background-color: $main-color-2;
             }
+        }
+        @media (max-width:1200px){
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: center;
         }
     }
 }
