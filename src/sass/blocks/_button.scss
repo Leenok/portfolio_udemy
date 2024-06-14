@@ -1,0 +1,21 @@
+.btn{
+line-height: 25px;
+font-size: 14px;
+border-radius: 5px;
+background: $main-color-2;
+padding: 7px 15px;
+
+transition: all 0.6s;
+    &:hover{
+        box-sizing: 0px 7px 7px rgba(0, 0, 0, 0.247);
+        background: $main-color-hover;
+        color: #fff;
+    }
+    &_color{
+        margin-right: 15px;
+        
+    }
+    &_notcolor{
+        background-color: #ffffff00;
+    }
+}

@@ -1,0 +1,97 @@
+.resume{
+    padding-top: 120px;
+    &__title{
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before{
+            top:-5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__wraper{
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        column-gap: 130px;
+    }
+    &__column{
+        &-title{
+            position: relative;
+            padding-left: 35px;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: $main-color-2;
+                left: 1px;
+                top: 25%;
+                transform: translateX(-50%);
+            }
+        }
+        ul{
+            list-style-type: none;
+            li{
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item{
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 1px;
+            top: 43px;
+            background-color: #000;
+        }
+        &-head{
+            position: relative;
+            padding: 25px 0 0 100px;
+            h4{
+                margin-bottom: 0;
+            }
+        }
+        &-body{
+            padding-left: 43px;
+            margin-top: 12px;
+        }
+        &-icon{
+            position: absolute;
+            top: 25px;
+            left: 52px;
+            @include before_circle;
+            img{
+                position: absolute;
+                left: 8px;
+                top: 16px;
+            }
+        }
+        &-location{
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 3px;
+        }
+        &-body{
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+}
