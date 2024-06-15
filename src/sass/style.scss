@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     // width: 80%;
     max-width: 1140px;
